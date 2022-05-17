@@ -1,0 +1,12 @@
+% Create a function to write the inlet flow rates into the combine data
+function inletFlow = inlet(RPM)
+% close all 
+% clear all
+% clc
+
+% Set constants
+m = 0.8797;
+c = 0.088899;
+
+% Linear Equation 
+inletFlow = m*RPM + c;
